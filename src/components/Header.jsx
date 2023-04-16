@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <Container>
+    <Container className="bg-teal-300">
       <nav className="flex gap-4">
         <RouterLink className={getClassName} to="/">
           Home

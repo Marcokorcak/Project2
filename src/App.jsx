@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Container from "./components/container";
 import Header from "./components/Header";

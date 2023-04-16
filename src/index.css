@@ -7,15 +7,19 @@ header {
 }
 
 :link {
-  text-align: center;
-  font-size: x-large;
-  font-weight: bold;
-  margin-bottom: 2%;
-  margin-left: 20%;
-  flex-direction: column-reverse;
+  font-size: 25px;
+  margin-left: 3%;
 }
 
-#link_style {
-  margin-left: 40%;
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
 }
 
+body {
+  background-color: rgb(94 234 212);
+
+}
