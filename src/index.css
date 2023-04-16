@@ -23,3 +23,27 @@ body {
   background-color: rgb(94 234 212);
 
 }
+
+p.hp{
+  text-align: center;
+  font-weight: bolder;
+  font-size: x-large;
+  
+}
+
+:link{
+  text-align: center;
+}
+
+div.hp{
+  margin-top: 5%;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+
+}
+
+p.auth{
+  font-size: larger;
+  color: aliceblue;
+}

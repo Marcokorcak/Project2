@@ -1,9 +1,10 @@
 import Container from "../components/container";
+import Posts from "./BlogPosts";
 
 const Home = () => {
   return (
     <Container>
-      <p>Home Page</p>
+      <Posts> </Posts>
     </Container>
   );
 };
