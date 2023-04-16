@@ -36,16 +36,18 @@ p.hp{
 }
 
 div.hp{
-  margin-top: 5%;
-  justify-content: center;
-  text-align: center;
-  display: flex;
-
+  margin-top: 3%;
+  border: 5px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
 
 p.auth{
   font-size: larger;
   color: aliceblue;
+  text-align: center;
 }
 
 p.b {

@@ -39,8 +39,8 @@ const Posts = () => {
             <p className = 'hp'>Click on any Post</p>
             <div className='hp'> 
             {posts.map(post => {
-                return <div key={post.id}>
-                    <Link id="link_style" className='rounded-2xl w-60 transition duration-500 hover:scale-150 hover:bg-teal-600 flex justify-center text-center' to={`/posts/${post.id}`}>{post.title}</Link>
+                return <div key={post.id}> 
+                    <Link id="link_style" className='rounded-2xl w-60 transition duration-500 hover:scale-150 hover:bg-teal-600 flex justify-center text-center' to={`/posts/${post.id}`}>{post.title}</Link> 
                     <p className='auth'> by {post.author}</p>
                 </div>
             })}
