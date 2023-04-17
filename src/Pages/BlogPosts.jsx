@@ -39,7 +39,7 @@ const Posts = () => {
 			)}
 			{!error && !loading && (
 				<>
-					<p className="hp">Click on any Post</p>
+					<p className="fancy">Posts<span className="fancy"></span></p>
 					<div className="hp">
 						{posts.map((post) => {
 							return (
