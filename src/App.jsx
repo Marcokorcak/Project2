@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Create from "./Pages/Create";
 import Post from "./Pages/BlogPost";
+import Edit from "./Pages/Edit";
+import Posts from "./Pages/BlogPosts";
 import "./index.css";
 
 function App() {
@@ -16,6 +18,9 @@ function App() {
           <Route index element={<Home />}></Route>
           <Route path="/create" element={<Create />}></Route>
           <Route path="/posts/:id" element={<Post />}></Route>
+          <Route path="/posts/:id/edit" element={<Edit />}></Route>
+          <Route path="/posts" element={<Posts />}></Route>
+
         </Routes>
       </Container>
       <Footer />

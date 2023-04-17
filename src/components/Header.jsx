@@ -1,6 +1,7 @@
 import { NavLink as RouterLink } from "react-router-dom";
 import Container from "./Container";
 import React from "react";
+import logo from "../images/logo.png"
 
 const Header = () => {
   const getClassName = (props) => {
@@ -10,8 +11,9 @@ const Header = () => {
   };
 
   return (
-    <Container className="bg-teal-300">
+    <Container className="bg-indigo-600">
       <nav className="flex gap-4">
+        <img src={logo} />
         <RouterLink className={getClassName} to="/">
           Home
         </RouterLink>

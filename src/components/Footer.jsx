@@ -2,7 +2,7 @@ import Container from "./Container";
 
 const Footer = () => {
   return (
-    <Container className="footer bg-teal-300">Coming soon: A Footer!</Container>
+    <Container className="footer bg-indigo-600"> © 2023 Marco Korcak</Container>
   );
 };
 

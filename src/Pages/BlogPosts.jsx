@@ -40,7 +40,7 @@ const Posts = () => {
             <div className='hp'> 
             {posts.map(post => {
                 return <div key={post.id}> 
-                    <Link id="link_style" className='rounded-2xl w-60 transition duration-500 hover:scale-150 hover:bg-teal-600 flex justify-center text-center' to={`/posts/${post.id}`}>{post.title}</Link> 
+                    <Link id="link_style" className='rounded-2xl w-60 transition duration-500 hover:scale-150 hover:bg-cyan-200 flex justify-center text-center' to={`/posts/${post.id}`}>{post.title}</Link> 
                     <p className='auth'> by {post.author}</p>
                 </div>
             })}
