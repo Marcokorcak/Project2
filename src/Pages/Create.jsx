@@ -3,12 +3,12 @@ import { useState } from 'react';
 import Skeleton from 'react-loading-skeleton';
 import 'react-loading-skeleton/dist/skeleton.css';
 import axios from 'axios';
+import ErrorAlert from '../components/ErrorAlert';
 
 const Create = () => {
 	const [title, setTitle] = useState('');
 	const [content, setContent] = useState('');
 	const [author, setAuthor] = useState('');
-	const [postData, setPostData] = useState('');
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
 
@@ -29,6 +29,7 @@ const Create = () => {
 		setTitle('');
 		setContent('');
 		setAuthor('');
+		setLoading(false);
 	};
 
 	return (
@@ -41,9 +42,9 @@ const Create = () => {
 			)}
 			{!error && !loading && (
 				<>
-					<h1 className="edit"> Create a New Post </h1>
-
 					<div className="create">
+						<h1 className="edit"> Create a New Post </h1>
+
 						<label> Title:</label>
 						<input
 							type="text"
@@ -79,9 +80,9 @@ const Create = () => {
 										xmlns="http://www.w3.org/2000/svg"
 									>
 										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
 											d="M14 5l7 7m0 0l-7 7m7-7H3"
 										></path>
 									</svg>
@@ -95,9 +96,9 @@ const Create = () => {
 										xmlns="http://www.w3.org/2000/svg"
 									>
 										<path
-											stroke-linecap="round"
-											stroke-linejoin="round"
-											stroke-width="2"
+											strokeLinecap="round"
+											strokeLinejoin="round"
+											strokeWidth="2"
 											d="M14 5l7 7m0 0l-7 7m7-7H3"
 										></path>
 									</svg>

@@ -46,7 +46,7 @@ const Posts = () => {
 								<div key={post.id}>
 									<Link
 										id="link_style"
-										className="rounded-2xl w-60 transition duration-500 hover:scale-150 hover:bg-cyan-200 flex justify-center text-center"
+										className="rounded-2xl w-60 transition duration-300 hover:scale-150 hover:bg-orange-400 flex justify-center text-center"
 										to={`/posts/${post.id}`}
 									>
 										{post.title}

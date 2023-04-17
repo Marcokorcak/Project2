@@ -5,13 +5,11 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
+import ErrorAlert from '../components/ErrorAlert';
 
 const Delete = () => {
 	const params = useParams();
 
-	const [title, setTitle] = useState('');
-	const [content, setContent] = useState('');
-	const [author, setAuthor] = useState('');
 	const [postData, setPostData] = useState('');
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
@@ -23,10 +21,6 @@ const Delete = () => {
 		try {
 			const response = await axios.get(URL);
 			setPostData(response.data);
-
-			setTitle(response.data.title);
-			setContent(response.data.content);
-			setAuthor(response.data.author);
 			console.log(JSON.stringify(response));
 		} catch (error) {
 			setError(error);
@@ -59,7 +53,7 @@ const Delete = () => {
 				)}
 				{!error && !loading && <></>}
 				<p className="hp">This post has been deleted</p>
-				<Link to={`/posts`}>
+				<Link to={'/posts'}>
 					<div>
 						<a
 							href="#_"
@@ -75,9 +69,9 @@ const Delete = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>
@@ -91,9 +85,9 @@ const Delete = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>
@@ -118,8 +112,9 @@ const Delete = () => {
 				</div>
 			)}
 			{!error && !loading && <></>}
-			<h1 className="edit"> Delete this post?</h1>
+
 			<div className="create">
+				<h1> Delete this post?</h1>
 				<div className="create_buttonv2" onClick={deletePosts}>
 					<a
 						href="#_"
@@ -135,9 +130,9 @@ const Delete = () => {
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
 									d="M14 5l7 7m0 0l-7 7m7-7H3"
 								></path>
 							</svg>
@@ -151,9 +146,9 @@ const Delete = () => {
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
 									d="M14 5l7 7m0 0l-7 7m7-7H3"
 								></path>
 							</svg>
@@ -180,9 +175,9 @@ const Delete = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>
@@ -196,9 +191,9 @@ const Delete = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>

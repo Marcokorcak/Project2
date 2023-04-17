@@ -21,13 +21,15 @@ const Post = () => {
 	if (postInfo !== null) {
 		return (
 			<Container>
-				<div className="center">
-					<p className="a">{postInfo.title}</p>
-					<p className="b">By {postInfo.author}</p>
-					<div className="p-4">
-						<p className="b">The content is {postInfo.content}</p>
-						<p className="b">It was updated on {postInfo.last_updated}</p>
-						<p className="b">It was created on {postInfo.originally_published}</p>
+				<div className="post">
+					<div className="center">
+						<p className="a">{postInfo.title}</p>
+						<p className="b">By {postInfo.author}</p>
+						<div className="p-4">
+							<p className="b">The content is {postInfo.content}</p>
+							<p className="c">It was updated on {postInfo.last_updated}</p>
+							<p className="c">It was created on {postInfo.originally_published}</p>
+						</div>
 						<Link to={`/posts/${postInfo.id}/edit`}>
 							<div className="edit_button">
 								<a
@@ -44,9 +46,9 @@ const Post = () => {
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth="2"
 												d="M14 5l7 7m0 0l-7 7m7-7H3"
 											></path>
 										</svg>
@@ -60,9 +62,9 @@ const Post = () => {
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth="2"
 												d="M14 5l7 7m0 0l-7 7m7-7H3"
 											></path>
 										</svg>
@@ -90,9 +92,9 @@ const Post = () => {
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth="2"
 												d="M14 5l7 7m0 0l-7 7m7-7H3"
 											></path>
 										</svg>
@@ -106,9 +108,9 @@ const Post = () => {
 											xmlns="http://www.w3.org/2000/svg"
 										>
 											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												stroke-width="2"
+												strokeLinecap="round"
+												strokeLinejoin="round"
+												strokeWidth="2"
 												d="M14 5l7 7m0 0l-7 7m7-7H3"
 											></path>
 										</svg>

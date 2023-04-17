@@ -5,6 +5,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
+import ErrorAlert from '../components/ErrorAlert';
 
 const Edit = () => {
 	const params = useParams();
@@ -43,7 +44,7 @@ const Edit = () => {
 				content: content,
 				author: author,
 			})
-			.then(function (repsonse) {
+			.then(function (response) {
 				console.log(response);
 			});
 
@@ -64,7 +65,7 @@ const Edit = () => {
 				)}
 				{!error && !loading && <></>}
 				<p className="hp">Your post has been updated</p>
-				<Link to={`/posts`}>
+				<Link to={'/posts'}>
 					<div onClick={updateInfo}>
 						<a
 							href="#_"
@@ -80,9 +81,9 @@ const Edit = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>
@@ -96,9 +97,9 @@ const Edit = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>
@@ -123,8 +124,9 @@ const Edit = () => {
 				</div>
 			)}
 			{!error && !loading && <></>}
-			<h1 className="edit"> Edit your post</h1>
-			<div className="create">
+
+			<div className="edit">
+				<h1> Edit your post</h1>
 				<label> Title:</label>
 				<input
 					type="text"
@@ -160,25 +162,25 @@ const Edit = () => {
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
 									d="M14 5l7 7m0 0l-7 7m7-7H3"
 								></path>
 							</svg>
 						</span>
-						<span class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+						<span className="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
 							<svg
-								class="w-5 h-5 text-green-400"
+								className="w-5 h-5 text-green-400"
 								fill="none"
 								stroke="currentColor"
 								viewBox="0 0 24 24"
 								xmlns="http://www.w3.org/2000/svg"
 							>
 								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
+									strokeLinecap="round"
+									strokeLinejoin="round"
+									strokeWidth="2"
 									d="M14 5l7 7m0 0l-7 7m7-7H3"
 								></path>
 							</svg>
@@ -205,9 +207,9 @@ const Edit = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>
@@ -221,9 +223,9 @@ const Edit = () => {
 									xmlns="http://www.w3.org/2000/svg"
 								>
 									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
+										strokeLinecap="round"
+										strokeLinejoin="round"
+										strokeWidth="2"
 										d="M14 5l7 7m0 0l-7 7m7-7H3"
 									></path>
 								</svg>
