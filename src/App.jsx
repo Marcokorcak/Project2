@@ -7,6 +7,7 @@ import Create from "./Pages/Create";
 import Post from "./Pages/BlogPost";
 import Edit from "./Pages/Edit";
 import Posts from "./Pages/BlogPosts";
+import Delete from "./Pages/Delete";
 import "./index.css";
 
 function App() {
@@ -20,6 +21,8 @@ function App() {
           <Route path="/posts/:id" element={<Post />}></Route>
           <Route path="/posts/:id/edit" element={<Edit />}></Route>
           <Route path="/posts" element={<Posts />}></Route>
+          <Route path="/posts/:id/delete" element={<Delete />}></Route>
+
 
         </Routes>
       </Container>
