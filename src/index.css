@@ -38,10 +38,11 @@ p.hp{
 
 div.hp{
   margin-top: 3%;
-  border: 5px solid black;
+  border: 7px solid black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    
 }
 
 
