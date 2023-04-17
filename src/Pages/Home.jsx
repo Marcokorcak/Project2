@@ -1,5 +1,6 @@
 import Container from '../components/Container';
 import Posts from './BlogPosts';
+import React from 'react';
 
 const Home = () => {
 	return (

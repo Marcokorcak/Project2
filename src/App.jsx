@@ -9,6 +9,7 @@ import Edit from './Pages/Edit';
 import Posts from './Pages/BlogPosts';
 import Delete from './Pages/Delete';
 import './index.css';
+import React from 'react';
 
 function App() {
 	return (
