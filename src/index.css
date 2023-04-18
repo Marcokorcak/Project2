@@ -85,7 +85,7 @@ div.create {
 	border-color: #000000;
 	width: 70%;
 	border-radius: 15%;
-	height: 500px;
+	height:fit-content;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -221,4 +221,13 @@ p.fancy {
 		background-repeat: round;
 		background-position: 0em;
 	}
+}
+
+div.edit_buttonv2{
+  margin-top: 5%;
+  text-align: center;
+  align-self: center;
+
+ 
+ 
 }
