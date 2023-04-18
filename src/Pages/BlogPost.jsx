@@ -5,20 +5,30 @@ import React from 'react';
 
 const Post = () => {
 	const [postInfo, setPostInfo] = useState({ id: {} });
+	const [loading, setLoading] = useState(false);
+	const [error, setError] = useState(false);
 
 	const { id } = useParams();
 
-	const fetchDetails = () => {
-		fetch(`http://localhost:3001/v1/api/posts/${id}`)
-			.then((res) => res.json())
-			.then((data) => setPostInfo(data));
+	const fetchDetails = async () => {
+		const url = `http://localhost:3001/v1/api/posts/${id}`;
+		setLoading(true);
+		setError(false);
+		try {
+			const request = await fetch(url);
+			const response = await request.json();
+			setPostInfo(response);
+		} catch (e) {
+			setError('Error: ' + e.message);
+		} finally {
+			setLoading(false);
+		}
 	};
-
 	useEffect(() => {
 		fetchDetails();
 	}, []);
 
-	if (postInfo !== null) {
+	if (postInfo !== null && !error && !loading ) {
 		return (
 			<Container>
 				<div className="post">

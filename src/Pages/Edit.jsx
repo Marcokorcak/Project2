@@ -16,7 +16,7 @@ const Edit = () => {
 	const [postData, setPostData] = useState('');
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
-	const [editing, setEditing] = useState(true);
+	const [changing, setchanging] = useState(true);
 
 	const fetchData = async () => {
 		const URL = `http://localhost:3001/v1/api/posts/${params['id']}`;
@@ -48,13 +48,13 @@ const Edit = () => {
 				console.log(response);
 			});
 
-		setEditing(false);
+		setchanging(false);
 	};
 	useEffect(() => {
 		fetchData();
 	}, []);
 
-	if (!editing) {
+	if (!changing) {
 		return (
 			<>
 				{error && <ErrorAlert>{error}</ErrorAlert>}
@@ -192,7 +192,7 @@ const Edit = () => {
 					</a>
 				</div>
 				<Link to={`/posts/${postData.id}`}>
-					<div className="py-3" onClick={() => setEditing(false)}>
+					<div className="py-3" onClick={() => setchanging(false)}>
 						<a
 							href="#_"
 							className="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-semibold text-black transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group"

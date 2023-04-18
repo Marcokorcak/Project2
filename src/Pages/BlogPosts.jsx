@@ -6,7 +6,7 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import React from 'react';
 
 const Posts = () => {
-	const [posts, setPosts] = useState([]);
+	const [BlogPosts, setBlogPosts] = useState([]);
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState(false);
 
@@ -17,7 +17,7 @@ const Posts = () => {
 		try {
 			const request = await fetch(url);
 			const response = await request.json();
-			setPosts(response);
+			setBlogPosts(response);
 		} catch (e) {
 			setError('Error: ' + e.message);
 		} finally {
@@ -41,7 +41,7 @@ const Posts = () => {
 				<>
 					<p className="fancy">Posts<span className="fancy"></span></p>
 					<div className="hp">
-						{posts.map((post) => {
+						{BlogPosts.map((post) => {
 							return (
 								<div key={post.id}>
 									<Link
