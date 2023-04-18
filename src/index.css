@@ -233,3 +233,8 @@ div.edit_buttonv2{
  
  
 }
+
+p.loading{
+	font-size: 50px;
+	font-weight: bolder;
+}

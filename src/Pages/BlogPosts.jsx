@@ -34,6 +34,7 @@ const Posts = () => {
 			{error && <ErrorAlert>{error}</ErrorAlert>}
 			{!error && loading && (
 				<div className="max-w-[230px]">
+					<p className='loading'> loading....</p>
 					<Skeleton count="10" />
 				</div>
 			)}
