@@ -8,6 +8,13 @@ import {BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
 import { describe, beforeEach, expect, test } from 'vitest';
 import Create from './Create';
 
+describe('<Create />', () => {
+	test('App mounts properly', () => {
+		const wrapper = render(<BrowserRouter><Create /></BrowserRouter>);
+		expect(wrapper).toBeTruthy();
+	});
+}); 
+
 describe('Create Component renders correctly', () => {
 	beforeEach(() => {
 		render(
@@ -17,17 +24,12 @@ describe('Create Component renders correctly', () => {
 		);
 	});
 
-	test('The text "Create Post" appears', async () => {
+	test('The text "Create a New Post" appears', async () => {
 		await waitFor(() => {
-			expect(screen.queryAllByText('Create'));
+			expect(screen.queryAllByText('Create a New Post'));
 		});
 	});
 });
 
 
-describe('<Create />', () => {
-	test('App mounts properly', () => {
-		const wrapper = render(<BrowserRouter><Create /></BrowserRouter>);
-		expect(wrapper).toBeTruthy();
-	});
-}); 
+

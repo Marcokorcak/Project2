@@ -8,6 +8,14 @@ import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
 import { describe, beforeEach, expect, test } from 'vitest';
 import Edit from './Edit';
 
+describe('<Edit />', () => {
+	test('App mounts properly', () => {
+		const wrapper = render(<BrowserRouter><Edit /></BrowserRouter>);
+		expect(wrapper).toBeTruthy();
+	});
+}); 
+
+
 describe('Edit Component renders correctly', () => {
 	beforeEach(() => {
 		render(
@@ -19,15 +27,9 @@ describe('Edit Component renders correctly', () => {
 
 	test('The text "Edit Post" appears', async () => {
 		await waitFor(() => {
-			expect(screen.queryAllByText('Edit'));
+			expect(screen.queryAllByText('Edit Post'));
 		});
 	});
 });
 
 
-describe('<Edit />', () => {
-	test('App mounts properly', () => {
-		const wrapper = render(<BrowserRouter><Edit /></BrowserRouter>);
-		expect(wrapper).toBeTruthy();
-	});
-}); 

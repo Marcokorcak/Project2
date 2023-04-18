@@ -8,7 +8,16 @@ import {BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
 import { describe, beforeEach, expect, test } from 'vitest';
 import Posts from './BlogPosts';
 
-describe('Post Component renders correctly', () => {
+//tests the if the application reads data correctly and mounts
+
+describe('<Posts />', () => {
+	test('App mounts properly', () => {
+		const wrapper = render(<BrowserRouter><Posts /></BrowserRouter>);
+		expect(wrapper).toBeTruthy();
+	});
+}); 
+
+describe('Posts Component renders correctly', () => {
 	beforeEach(() => {
 		render(
 			<Router>
@@ -19,15 +28,10 @@ describe('Post Component renders correctly', () => {
 
 	test('The text "Posts" appears', async () => {
 		await waitFor(() => {
-			expect(screen.queryAllByText('Post'));
+			expect(screen.queryAllByText('Posts'));
 		});
 	});
 });
 
 
-describe('<Posts />', () => {
-	test('App mounts properly', () => {
-		const wrapper = render(<BrowserRouter><Posts /></BrowserRouter>);
-		expect(wrapper).toBeTruthy();
-	});
-}); 
+
