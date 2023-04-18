@@ -52,7 +52,7 @@ const Delete = () => {
 					</div>
 				)}
 				{!error && !loading && <></>}
-				<p className="hp">This post has been deleted</p>
+				<p className="hp" data-testid="delete test">This post has been deleted</p>
 				<Link to={'/posts'}>
 					<div>
 						<a
