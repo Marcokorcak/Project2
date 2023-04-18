@@ -4,30 +4,30 @@
 
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import {BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router } from 'react-router-dom';
 import { describe, beforeEach, expect, test } from 'vitest';
-import Delete from './Delete';
+import Edit from './Edit';
 
-describe('Delete Component renders correctly', () => {
+describe('Edit Component renders correctly', () => {
 	beforeEach(() => {
 		render(
 			<Router>
-				<Delete />
+				<Edit />
 			</Router>
 		);
 	});
 
-	test('The text "Delete Post" appears', async () => {
+	test('The text "Edit Post" appears', async () => {
 		await waitFor(() => {
-			expect(screen.queryAllByText('Delet'));
+			expect(screen.queryAllByText('Edit'));
 		});
 	});
 });
 
 
-describe('<Delete />', () => {
+describe('<Edit />', () => {
 	test('App mounts properly', () => {
-		const wrapper = render(<BrowserRouter><Delete /></BrowserRouter>);
+		const wrapper = render(<BrowserRouter><Edit /></BrowserRouter>);
 		expect(wrapper).toBeTruthy();
 	});
 }); 
