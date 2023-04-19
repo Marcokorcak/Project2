@@ -17,8 +17,8 @@ Requirements:
 * A consistent header and footer on each page with navigation links for HOME, CREATE, etc. The navigation item for the current page should be bold.
 The following routes at a minimum:
 * VIEW:
-/ – homepage, list out the existing blog posts
-/blog/{ID} – individual blog post
+  * / – homepage, list out the existing blog posts
+  * /blog/{ID} – individual blog post
 * CREATE/UPDATE:
    * /create – a form to add a blog post
    * /blog/{ID}/edit
