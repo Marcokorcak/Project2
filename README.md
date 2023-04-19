@@ -31,7 +31,8 @@ The following routes at a minimum:
 
 ## Extra Features
 
-
+* Made a unique logo for the blog and company name called "SLK"
+* Edited Back End code so that the author would also be included when posts are laoded 
 
 ## Screenshots
 
@@ -45,7 +46,7 @@ The image above shows a example of what a post looks like which includes the tit
 
 <img src="https://user-images.githubusercontent.com/77298953/232967305-a146f7f4-9a40-4e66-9386-3b1a1686172a.png" width=60% height=60%>
 
-The image above whos the "create a post" page where users can create their own posts
+The image above whos the "Create a Post" page where users can create their own posts
 
 <img src="https://user-images.githubusercontent.com/77298953/232967378-639cb4dc-0790-4b35-87dc-e764aabb42af.png" width=60% height=60%>
 
