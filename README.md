@@ -35,14 +35,24 @@ The following routes at a minimum:
 
 ## Screenshots
 
-<img src="https://user-images.githubusercontent.com/77298953/225203170-b1aecb90-cc68-4346-892f-850e85a5ad0a.png" width=60% height=60%>
+<img src="https://user-images.githubusercontent.com/77298953/232967165-f254581f-829b-472a-a8e4-fa6a156dfc67.png" width=60% height=60%>
 
-The image above shows the books tab on the website where it also shows the directory in the top left using breadcrumbs
+The image above shows the home page of the website where all of the posts are listed
 
-<img src="https://user-images.githubusercontent.com/77298953/225203292-c6f9c3e5-b000-42bf-8f98-9b2e7d520857.png" width=60% height=60%>
+<img src="https://user-images.githubusercontent.com/77298953/232967248-51777150-1fab-4f8b-8ee0-998a643e96ce.png" width=60% height=60%>
 
-The image above shows all of the infromation displayed when clicking on a book title
+The image above shows a example of what a post looks like which includes the title, author, content, date published and date updated
 
+<img src="https://user-images.githubusercontent.com/77298953/232967305-a146f7f4-9a40-4e66-9386-3b1a1686172a.png" width=60% height=60%>
 
+The image above whos the "create a post" page where users can create their own posts
+
+<img src="https://user-images.githubusercontent.com/77298953/232967378-639cb4dc-0790-4b35-87dc-e764aabb42af.png" width=60% height=60%>
+
+The image above shows the "Delete Post" page where user can confirm or cancel to delete a post
+
+<img src="https://user-images.githubusercontent.com/77298953/232967467-ccb56f18-a8d4-4f1d-a452-b25b7cff5b05.png" width=60% height=60%>
+
+The image above shows the "Edit Post" page where user can alter already existing posts
 
 
