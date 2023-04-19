@@ -19,9 +19,9 @@ describe('<Edit />', () => {
 describe('Edit Component renders correctly', () => {
 	beforeEach(() => {
 		render(
-			<Router>
+			<BrowserRouter>
 				<Edit />
-			</Router>
+			</BrowserRouter>
 		);
 	});
 

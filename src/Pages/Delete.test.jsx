@@ -16,16 +16,16 @@ describe('<Delete />', () => {
 }); 
 
 
-describe('Delete Component renders correctly', () => {
+describe('Delete Component renders', () => {
 	beforeEach(() => {
 		render(
-			<Router>
+			<BrowserRouter>
 				<Delete />
-			</Router>
+			</BrowserRouter>
 		);
 	});
 
-	test('The text "Delete Post" appears', async () => {
+	test('The text "Delete Post" shows', async () => {
 		await waitFor(() => {
 			expect(screen.queryAllByText('Delete Post'));
 		});

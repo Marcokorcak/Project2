@@ -18,9 +18,9 @@ describe('<Create />', () => {
 describe('Create Component renders correctly', () => {
 	beforeEach(() => {
 		render(
-			<Router>
+			<BrowserRouter>
 				<Create />
-			</Router>
+			</BrowserRouter>
 		);
 	});
 

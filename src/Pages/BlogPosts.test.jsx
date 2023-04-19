@@ -20,9 +20,9 @@ describe('<Posts />', () => {
 describe('Posts Component renders correctly', () => {
 	beforeEach(() => {
 		render(
-			<Router>
+			<BrowserRouter>
 				<Posts />
-			</Router>
+			</BrowserRouter>
 		);
 	});
 
